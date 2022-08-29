@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:bisque;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+        <p>Our project aims to product the BEST synthetic beef imaginable! <br> All made from the Biodiversity of our own navels!</p> 
+        <center><img src="https://imgs.search.brave.com/39fxxBy-7JIOefDuihnKNjJAiB-Uhsrh57S4UsfVw_w/rs:fit:300:200:1/g:ce/aHR0cHM6Ly9jbGlw/YXJ0c3RhdGlvbi5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDkvYmVsbHkt/YnV0dG9uLWNsaXBh/cnQtNC0zMDB4MjAw/LmpwZw" class="img-responsive" alt="Responsive image"/></center>
+        <p><br> Join us on our quest as we scour the belly buttons of hundreds of volunteers <br> to discover the most delicious blend of bathing, bacteria type, and bacteria concentration. <br> Soon, the best beef will be BELLY BUTTON BEEF! <br> Three Cheers for Synthetic Bacteria Burgers! Mmmmm!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <center><h3>Belly Button Washing Frequency</h3></center>
+        <center><h5>Scrubs per Week</h5></center>
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
