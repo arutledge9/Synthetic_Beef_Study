@@ -1,4 +1,4 @@
-# bacteria_beef
+# Synthetic Beef Study
 
 ## Summary
 
